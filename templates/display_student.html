@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student webpage</title>
+</head>
+<body>
+    <center>
+        <h1>student details</h1>
+        <table border="2px">
+            <tr>
+                <th>student_id</th>
+                <th>student_name</th>
+                <th>student_email</th>
+                <th>schoolname</th>
+            </tr>
+            {% for sinfo in stinfo %}
+            <tr>
+            <td>{{sinfo.sid}}</td>
+            <td>{{sinfo.sname}}</td>
+            <td>{{sinfo.semail}}</td>
+            <td>{{sinfo.schlname}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
