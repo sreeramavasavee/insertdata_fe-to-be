@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school webpage</title>
+</head>
+<body>
+    <center>
+    <h1>school webpage</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="schlname">schoolname</label>
+        <input type="text" name="schlname" id="schlname"><br><br>
+        <label for="pname">principal</label>
+        <input type="text" name="pname" id="pname"><br><br>
+        <label for="add">address</label>
+        <input type="text" name="add" id="add"><br><br>
+        
+        <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>
